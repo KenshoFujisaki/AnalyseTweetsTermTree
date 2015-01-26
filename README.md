@@ -20,14 +20,16 @@
     ```
 
 3. 形態素解析器(MeCab,Juman)のインストール  
-    MeCab，Jumanのいずれかインストールすれば実行できます．
-    + MeCabのインストール
+    MeCab，Jumanのいずれかインストールすれば実行できます． 
+
+    + MeCabのインストール  
         ```sh
         $ brew install mecab
         ```
-        `mecab`コマンドが実行できればOK
+        `mecab`コマンドが実行できればOK  
+    
     + Jumanのインストール  
-      [日本語形態素解析システムJUMAN](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN)にしたがってインストール  
+        [日本語形態素解析システムJUMAN](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN)にしたがってインストール   
         ```sh
         $ cd .
         $ wget http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi\?down\=http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/juman/juman-7.01.tar.bz2\&name\=juman-7.01.tar.bz2
@@ -37,7 +39,7 @@
         $ make
         $ make install
         ```
-        `juman`コマンドが実行できればOK
+        `juman`コマンドが実行できればOK  
 
 4. graphvizのインストール  
     ```sh
