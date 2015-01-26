@@ -47,7 +47,7 @@
     ```
 
 ## 使い方
-1. グラフの出力
+1. グラフの出力  
     ```sh
     $ ./create_graph.sh [from_date] [to_date] [is_remove_tmp_files]
     ```
