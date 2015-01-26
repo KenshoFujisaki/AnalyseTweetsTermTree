@@ -19,14 +19,25 @@
     $ sudo pip install matplotlib
     ```
 
-3. 形態素解析器(MeCab)のインストール  
-    ```sh
-    $ brew install mecab
-    ```
-    <!-- 
-    Jumanの場合  
-    [日本語形態素解析システムJUMAN](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN)にしたがってインストール  
-    -->
+3. 形態素解析器(MeCab,Juman)のインストール  
+    MeCab，Jumanのいずれかインストールすれば実行できます．
+    + MeCabのインストール
+        ```sh
+        $ brew install mecab
+        ```
+        `mecab`コマンドが実行できればOK
+    + Jumanのインストール  
+      [日本語形態素解析システムJUMAN](http://nlp.ist.i.kyoto-u.ac.jp/index.php?JUMAN)にしたがってインストール  
+        ```sh
+        $ cd .
+        $ wget http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi\?down\=http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/juman/juman-7.01.tar.bz2\&name\=juman-7.01.tar.bz2
+        $ tar xvf lime.cgi\?down=http:%2F%2Fnlp.ist.i.kyoto-u.ac.jp%2Fnl-resource%2Fjuman%2Fjuman-7.01.tar.bz2\&name=juman-7.01.tar.bz2
+        $ cd  juman-7.01
+        $ ./configure --prefix=$HOME/local  # prefixは適宜設定
+        $ make
+        $ make install
+        ```
+        `juman`コマンドが実行できればOK
 
 4. graphvizのインストール  
     ```sh
